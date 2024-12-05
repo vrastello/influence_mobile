@@ -1,6 +1,6 @@
 require 'faker'
 
-age_range = [[10, 15], [16, 20], [21, 25], [26, 30], [31, 40], [41, 60]]
+age_range = [[10, 16], [13, 20], [18, 25], [21, 30], [28, 40], [38, 60]]
 age_range.each_with_index do |range, i|
   AgeGroup.create!(name: "group #{i}",
                   start_age: range[0],
